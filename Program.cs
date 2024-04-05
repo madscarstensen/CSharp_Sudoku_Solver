@@ -29,17 +29,9 @@ namespace SudokuSolver {
 
       for (int i = 1; i < 10; i++) {
         if (sudokuSolver.CheckNumber(sudokuProblemHard, i, rowPosition, columnPosition)) {
-          Console.Write(i);
-          Console.Write(" fits in position ");
-          Console.Write(rowPosition);
-          Console.Write(",");
-          Console.WriteLine(columnPosition);
+          Console.WriteLine($"{i} fits in position {rowPosition},{columnPosition}");
         } else {
-          Console.Write(i);
-          Console.Write(" does not fit in position ");
-          Console.Write(rowPosition);
-          Console.Write(",");
-          Console.WriteLine(columnPosition);
+          Console.WriteLine($"{i} does not fit in position {rowPosition},{columnPosition}");
         }
       }
     }
